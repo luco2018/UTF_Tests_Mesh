@@ -39,5 +39,7 @@ public class SkinnedMeshBaker : MonoBehaviour
 		}
 		mf.mesh = new Mesh ();
 		mf.mesh.CombineMeshes (combine);
-	}
+
+        GraphicsTestFramework.TestTypeManager.Instance.GetActiveTestLogic().WaitCallback();
+    }
 }
